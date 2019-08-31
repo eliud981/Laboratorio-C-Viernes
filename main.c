@@ -1,8 +1,210 @@
+//ACTIVIDAD1
+/*
+*Autor: Eliud Y. Delgado Bedoy
+*Fecha: 24/08/2019
+*Grupo: 006
+*Horario: 7:00am - 9:00am.
+*Matricula: 1737570
+*/
+
+/*PROGRAMA: NUMERO MAYOR DE DOS NUMEROS INTRODUCIDOS*/
+
 #include <stdio.h>
+#include <conio.h>
+
+int main() 
+{
+	//DECLARACION DE VARIABLES
+	float Num1;	
+	float Num2;
+	//INTRODUCCION DE VALORES A VARIABLES
+	printf("\nIntroduzaca el primer numero:", Num1);
+	scanf("%f", &Num1);
+	printf("\nIntroduzaca el segundo numero:", Num1);
+	scanf("%f", &Num2);
+	//USO DE CONDICON IF ELSE
+	if(Num1>Num2)// SI EL NUMERO DE VARIABLE NUMERO1 ES MAYOR QUE NUMERO DE VARIBLE DE NUMERO 2 
+		printf("\n El %f es mayor", Num1);//INPRIMIR QUE ES MAYOR
+	else //SI NO SE CUMPLE LA ANTERIOR CONDICION 
+		if(Num1<Num2)//COMPROBAR AHORA SI EL NUMERO 2 ES MAYOR QUE EL 1
+			printf("\n El %f es mayor", Num2);//Y AHORA IMPRIMIR QUE NUMERO 2 ES MAYOR QUE 1
+		else//SI NO SE CUMPLEN NINGUNA DE LAS CONDICIONES ANTERIORES 
+			printf("\nSON IGUALES");//ENTONCES IMPRIMIMOS QUE LOS NUMEROS SON IGUALES 
+			
+	return 0;//FIN DEL PROGRAMA 
+}
+//ACTIVIDAD2
+/*
+*Autor: Eliud Y. Delgado Bedoy
+*Fecha: 24/08/2019
+*Grupo: 006
+*Horario: 7:00am - 9:00am.
+*Matricula: 1737570
+*/
+
+/*PROGRAMA: CONDICIONES*/
+
+#include <stdio.h>
+#include <conio.h>
 #include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) {
+//INICIO DE PROGRAMA 
+int main() 
+{
+	//DECLARACION DE VARIABLES 
+	int A = 5, B = 3, C = -12;
+ 	
+ 	//IMPRESION DE VARIABLES 
+	printf("\nA=5\tB=3\tC=-12");
+	
+	//CONDICIONES CON NUMEROS ASIGNADOS A LAS VARIABLES 
+	printf("\n\n(A>3):");//IMPRESION DE CONDICION
+	if (A>3)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", A);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", A);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A>C):");//IMPRESION DE CONDICION
+	if (A>C)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", A,C);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", A,C);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(B!=C):");//IMPRESION DE CONDICION
+	if (B!=C)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", B,C);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", B,C);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A==3):");//IMPRESION DE CONDICION
+	if (A==3)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", A);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", A);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A*B==15):");//IMPRESION DE CONDICION
+	if (A*B==15)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", A,B);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(C/B<A):");//IMPRESION DE CONDICION
+	if (C/B<A)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", A,C,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", A,C,B);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+		
+	printf("\n\n(C/B==-10):");//IMPRESION DE CONDICION
+	if (C/B==-10)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", C,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", C,B);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A+B+C==5):");//IMPRESION DE CONDICION
+	if (A+B+C==5)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", A,C,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", A,C,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n((A+B==8)&&(A-B==2)):");//IMPRESION DE CONDICION
+	if ((A+B==8)&&(A-B==2))//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t FALSO", A,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n((A+B==8)||(A-B==6)):");//IMPRESION DE CONDICION
+	if ((A+B==8)||(A-B==6))//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t FALSO", A,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A>3&&B>3&&C<3):");//IMPRESION DE CONDICION
+	if (A>3&&B>3&&C<3)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t FALSO", A,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
 	return 0;
 }
+
+//ACTIVIDAD3
+/*
+*Autor: Eliud Y. Delgado Bedoy
+*Fecha: 24/08/2019
+*Grupo: 006
+*Horario: 7:00am - 9:00am.
+*Matricula: 1737570
+*/
+
+/*PROGRAMA: CONDICIONES*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int main() //INICIO DE PROGRAMA
+{
+	//DECLARACION DE VARIABLES 
+	float A;
+	float B;
+	float C;
+	//DAR VALORES POR TECLADO A LAS VARIABLES DE CONDICIONES
+	printf("\nDALE UN VALOR A LETRA 'A': ");
+	scanf("%f",&A);
+	printf("\nDALE UN VALOR A LETRA 'B': ");
+	scanf("%f",&B);
+	printf("\nDALE UN VALOR A LETRA 'C': ");
+	scanf("%f",&C);
+	
+	//IMPRESION DE VARIABLES 
+	printf("\nA=%.2f\tB=%.2f\tC=%.2f",A,B,C);
+
+	
+	
+			//CONDICIONES CON NUMEROS ASIGNADOS A LAS VARIABLES 
+	printf("\n\n(A>3):");//IMPRESION DE CONDICION
+	if (A>3)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", A);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", A);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A>C):");//IMPRESION DE CONDICION
+	if (A>C)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", A,C);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", A,C);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(B!=C):");//IMPRESION DE CONDICION
+	if (B!=C)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", B,C);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", B,C);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A==3):");//IMPRESION DE CONDICION
+	if (A==3)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t\t VERDADERO", A);//IMPRIMIR VERDADERO
+	else printf("\t\t\t FALSO", A);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A*B==15):");//IMPRESION DE CONDICION
+	if (A*B==15)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", A,B);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(C/B<A):");//IMPRESION DE CONDICION
+	if (C/B<A)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", A,C,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", A,C,B);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+		
+	printf("\n\n(C/B==-10):");//IMPRESION DE CONDICION
+	if (C/B==-10)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", C,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", C,B);	//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A+B+C==5):");//IMPRESION DE CONDICION
+	if (A+B+C==5)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t\t VERDADERO", A,C,B);//IMPRIMIR VERDADERO
+	else printf("\t\t FALSO", A,C,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n((A+B==8)&&(A-B==2)):");//IMPRESION DE CONDICION
+	if ((A+B==8)&&(A-B==2))//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t FALSO", A,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n((A+B==8)||(A-B==6)):");//IMPRESION DE CONDICION
+	if ((A+B==8)||(A-B==6))//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t FALSO", A,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	printf("\n\n(A>3&&B>3&&C<3):");//IMPRESION DE CONDICION
+	if (A>3&&B>3&&C<3)//SI PRIMERA CONDICION SE CUMPLE 
+		printf("\t VERDADERO", A,B);//IMPRIMIR VERDADERO
+	else printf("\t FALSO", A,B);//SI NO SE CUMPLE CONDICION ANTERIOR IMPRIMIR FALSO
+	
+	return 0;
+}
+
